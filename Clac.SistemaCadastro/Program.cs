@@ -10,12 +10,12 @@ namespace Clac.SistemaCadastro
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Olá mundo!");
-            Console.WriteLine("What is your name:");
+           PessoaClass pessoa = new PessoaClass(1, "Daniela", 25, "Rua Paineiras", "Faz. Rio Grande");
+            
+            pessoa.Apresentar();
+            //Console.WriteLine(pessoa.ToString());
 
-            string name = Console.ReadLine();
-
-            Console.WriteLine($"My name is {name}");
+           Console.WriteLine( pessoa.ToString());
         }
     }
 }
